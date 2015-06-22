@@ -1,272 +1,305 @@
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/*********************
+General
+**********************/
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+a {
+    text-decoration: none;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+img {
+    max-width: 100%;
 }
 
-/*
- * Remove default fieldset styles.
- */
+h3 {
+    margin: 0 0 1em 0;
+}
 
-fieldset {
-    border: 0;
+
+/*********************
+HEADING
+**********************/
+
+header{
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+#logo {
+    text-align: center;
     margin: 0;
+}
+
+h1 {
+    font-family: 'Changa One', sans-serif;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.8em;
+}
+
+h2{
+    font-size: 0.75em;
+    margin: -5px 0 0;
+    font-weight: normal;
+}
+
+
+
+/*********************
+NAVIGATION
+**********************/
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
+nav li {
+    display: inline-block;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
+/*********************
+FOOTER
+**********************/
+footer {
+    font-size: 0.75em;
+    text-align: center;
     clear: both;
+    padding-top: 50px;
+    color: #ccc;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
 }
 
-@media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+
+
+
+
+/*********************
+PAGE: PORTFOLIO
+**********************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+#gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;
+}
+
+
+
+/*********************
+PAGE: ABOUT
+**********************/
+
+.profile-photo {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+}
+
+
+/*********************
+PAGE: CONTACT
+**********************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png')
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png')
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png')
+}
+
+
+/*********************
+COLORS
+**********************/
+
+/* site body */
+body {
+    background-color: #fff;
+    color: #999;
+}
+
+/* Green header */
+header {
+    Background: #6ab47b;
+    border-color: #599a68;
+}
+
+/* Nav background on mobile  */
+nav{
+    background: #599a68;
+}
+
+/* Logo text */
+h1, h2 {
+    color: #fff;
+}
+
+/* links */
+a{
+    color: #6ab47b;
+}
+
+/* Nav link  */
+nav a, nav a:visited {
+    color: #fff;
+}
+
+/* Selected Nav link  */
+nav a.selected, nav a:hover {
+    color: #32673f;
+}
+
+
+/***************************
+ RESPONSIVE
+ **************************/
+
+@media screen and (min-width: 480px) {
+
+    /*********************
+    TWO COLUMN LAYOUT
+    **********************/
+
+    #primary {
+        width: 50%;
+        float: left;
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
+    #secondary {
+        width: 40%;
+        float:right;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
+
+
+    /*********************
+  PAGE: PORTFOLIO
+  **********************/
+
+    #gallery li {
+        width: 28.3333%
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+    #gallery li:nth-child(4n) {
+        clear: left;
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+
+    /*********************
+    PAGE: ABOUT
+    **********************/
+
+    .profile-photo {
+        float: left;
+        margin: 0 5% 80px 0;
     }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+}
+
+@media screen and (min-width: 660px) {
+
+    /*********************
+    HEADER
+    **********************/
+
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        width: 45%;
     }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
     }
 
-    tr,
-    img {
-        page-break-inside: avoid;
+    h1 {
+        font-size: 2.5em;
     }
 
-    img {
-        max-width: 100% !important;
+    h2 {
+        font-size: 0.825em;
+        margin-bottom: 20px;
     }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
+    header {
+        border-bottom: 5px solid #599a68;
+        margin-bottom: 60px;
     }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+
 }
