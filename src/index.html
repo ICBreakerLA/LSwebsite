@@ -31,31 +31,31 @@
         <ul id="gallery">
             <li>
                 <a href="img/numbers-01.jpg">
-                    <img src="img/numbers-01.jpg" alt="">
+                    <img src="img/numbers-01.jpg" id="imagelightbox" alt="">
                     <p>Experimentation</p>
                 </a>
             </li>
             <li>
                 <a href="img/numbers-02.jpg">
-                    <img src="img/numbers-02.jpg" alt="">
+                    <img src="img/numbers-02.jpg" id="imagelightbox" alt="">
                     <p>Shoop da Woop</p>
                 </a>
             </li>
             <li>
                 <a href="img/numbers-06.jpg">
-                    <img src="img/numbers-06.jpg" alt="">
+                    <img src="img/numbers-06.jpg" id="imagelightbox" alt="">
                     <p>For the lulz</p>
                 </a>
             </li>
             <li>
                 <a href="img/numbers-09.jpg">
-                    <img src="img/numbers-09.jpg" alt="">
+                    <img src="img/numbers-09.jpg" id="imagelightbox" alt="">
                     <p>Get to tha choppa</p>
                 </a>
             </li>
             <li>
                 <a href="img/numbers-12.jpg">
-                    <img src="img/numbers-12.jpg" alt="">
+                    <img src="img/numbers-12.jpg" id="imagelightbox" alt="">
                     <p>GL HF</p>
                 </a>
             </li>
@@ -67,5 +67,18 @@
         <p>&copy; 2015 Lionel Sellam.</p>
     </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/imagelightbox.min.js"></script>
+<script>
+    //	WITH CAPTION & ACTIVITY INDICATION
+
+    $( 'a[data-imagelightbox="d"]' ).imageLightbox(
+            {
+                onLoadStart: function() { captionOff(); activityIndicatorOn(); },
+                onLoadEnd:	 function() { captionOn(); activityIndicatorOff(); },
+                onEnd:		 function() { captionOff(); activityIndicatorOff(); }
+            });
+
+</script>
 </body>
 </html>
