@@ -3,9 +3,8 @@ General
 **********************/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
-
 
 #wrapper {
     max-width: 940px;
@@ -43,7 +42,7 @@ header{
 }
 
 h1 {
-    font-family: 'Changa One', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     margin: 15px 0;
     font-size: 1.75em;
     font-weight: normal;
@@ -108,6 +107,43 @@ footer {
 PAGE: PORTFOLIO
 **********************/
 
+#wrapper header {
+    background: #fff;
+    border-color: #fff;
+    text-align: center;
+
+}
+
+#wrapper h1{
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.975em;
+    text-transform: uppercase;
+    margin-top: -0.5em;
+    color: #000;
+}
+
+#wrapper h2{
+    font-size: 1.45em;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: -1.375em;
+    color: #000;
+
+}
+
+#wrapper article img {
+    width: 7.75em;
+    height: 7.75em;
+    border-color: #eee;
+    border: 0.625em solid rgba( 255, 255, 255, .5 );
+    -webkit-box-shadow: 0 0 0.313em rgba( 0, 0, 0, .05 );
+    box-shadow: 0 0 0.313em rgba( 0, 0, 0, .05 );
+    -webkit-transition: -webkit-box-shadow .3s ease, border-color .3s ease;
+    transition: box-shadow .3s ease, border-color .3s ease;
+}
+
 #gallery {
     margin: 0;
     padding: 0;
@@ -128,15 +164,31 @@ PAGE: PORTFOLIO
     font-size: 0.75em;
     color: #bdc3c7;
 }
+    /*********************
+    Lightbox
+    **********************/
 
-#imagelightbox
-{
-    position: fixed;
-    z-index: 9999;
+    #imagelightbox {
+        cursor: pointer;
+        position: fixed;
+        z-index: 10000;
+        -ms-touch-action: none;
+        touch-action: none;
+        -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+        box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+    }
 
-    -ms-touch-action: none;
-    touch-action: none;
-}
+    #imagelightbox-caption{
+        text-align: center;
+        color: #fff;
+        background-color: #666;
+        position: fixed;
+        z-index: 10001;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.625em;
+    }
 
 
 /*********************
@@ -196,13 +248,13 @@ body {
 
 /* Green header */
 header {
-    Background: #6ab47b;
-    border-color: #599a68;
+    Background: #076BAC;
+    border-color: #04385B;
 }
 
 /* Nav background on mobile  */
 nav{
-    background: #599a68;
+    background: #054C7A;
 }
 
 /* Logo text */
@@ -212,17 +264,17 @@ h1, h2 {
 
 /* links */
 a{
-    color: #6ab47b;
+    color: #054C7A;
 }
 
 /* Nav link  */
 nav a, nav a:visited {
-    color: #fff;
+    color: #04385B;
 }
 
 /* Selected Nav link  */
 nav a.selected, nav a:hover {
-    color: #32673f;
+    color: #fff;
 }
 
 
@@ -287,6 +339,12 @@ nav a.selected, nav a:hover {
         text-align: right;
         width: 45%;
     }
+    nav a, nav a:visited {
+        color: #054C7A;
+    }
+
+    nav a.selected, nav a:hover {
+        color: #fff;}
 
     #logo {
         float: left;
@@ -305,7 +363,7 @@ nav a.selected, nav a:hover {
     }
 
     header {
-        border-bottom: 5px solid #599a68;
+        border-bottom: 5px solid #04385B;
         margin-bottom: 60px;
     }
 
