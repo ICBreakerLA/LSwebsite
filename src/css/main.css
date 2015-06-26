@@ -367,5 +367,8 @@ nav a.selected, nav a:hover {
         margin-bottom: 60px;
     }
 
+    #wrapper h2{
+        margin-bottom: -2.375em;
+    }
 
 }
