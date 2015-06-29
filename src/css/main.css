@@ -223,7 +223,7 @@ ul {
 
 .badgesImg img {
     display: block;
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
@@ -367,6 +367,12 @@ nav a.selected, nav a:hover {
         float: left;
         margin: 2.5%;
         width: 40%;
+    }
+
+    .badgesImg img {
+        display: block;
+        width: 40%;
+        margin: auto;
     }
 
 }
