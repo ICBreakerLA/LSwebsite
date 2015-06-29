@@ -202,6 +202,35 @@ PAGE: ABOUT
     border-radius: 10px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.badgesImg {
+    float: left;
+    margin: 2.5%;
+    width: 40%;
+}
+
+.badgesImg img {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.badgesDate {
+    display: none;
+}
+
+.badgesName {
+    display: block;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+}
+
 
 /*********************
 PAGE: CONTACT
@@ -322,6 +351,8 @@ nav a.selected, nav a:hover {
         float: left;
         margin: 0 5% 80px 0;
     }
+
+
 
 }
 

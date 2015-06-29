@@ -7,7 +7,6 @@
 
 $(document).ready(function () {
     $.getJSON("http://teamtreehouse.com/lionelsellam.json", function (data) {
-        console.log(data);
         var badgesTreehouse = '<ul class="badges">';
         $.each(data.badges, function(index, el){
             badgesTreehouse += '<li class="badgesImg">';
