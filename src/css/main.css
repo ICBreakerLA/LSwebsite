@@ -194,6 +194,13 @@ PAGE: PORTFOLIO
 /*********************
 PAGE: ABOUT
 **********************/
+.about h3 {
+    text-align: center;
+}
+
+.latestBadges {
+    text-align: center;
+}
 
 .profile-photo {
     display: block;
@@ -204,7 +211,7 @@ PAGE: ABOUT
 
 ul {
     margin: 0;
-    padding: 0;
+    padding-left: 5%;
     list-style: none;
 }
 
@@ -349,10 +356,18 @@ nav a.selected, nav a:hover {
 
     .profile-photo {
         float: left;
-        margin: 0 5% 80px 0;
+        margin: 0 6% 80px 0;
     }
 
+    .latestBadges {
+        display: inline-block;
+    }
 
+    .badgesImg {
+        float: left;
+        margin: 2.5%;
+        width: 40%;
+    }
 
 }
 
@@ -396,6 +411,29 @@ nav a.selected, nav a:hover {
     header {
         border-bottom: 5px solid #04385B;
         margin-bottom: 60px;
+    }
+
+    /*********************
+    PAGE: ABOUT
+    **********************/
+    .wrapAbout {
+        margin-bottom: 32%;
+    }
+
+    .about {
+        padding-bottom: 5px;
+    }
+
+    .profile-photo {
+        float: left;
+        margin: 0 6% 80px 0;
+        width: 60%;
+    }
+
+    .badgesImg {
+        float: left;
+        margin: 0;
+        width: 32%;
     }
 
 
