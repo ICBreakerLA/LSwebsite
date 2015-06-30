@@ -209,22 +209,24 @@ PAGE: ABOUT
     border-radius: 10px;
 }
 
-ul {
+ul.badges {
     margin: 0;
-    padding-left: 5%;
+    padding-left: 0;
     list-style: none;
+    height: 305px;
+    overflow: auto;
 }
 
 .badgesImg {
     display: inline-block;
     margin: 2.5%;
-    width: 40%;
+    width: 28%;
     vertical-align: top;
 }
 
 .badgesImg img {
     display: block;
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
@@ -236,6 +238,7 @@ ul {
     margin: auto;
     padding: 5%;
     text-align: center;
+    font-size: 0.75em;
 }
 
 
@@ -365,8 +368,13 @@ nav a.selected, nav a:hover {
 
     .badgesImg img {
         display: block;
-        width: 40%;
+        width: 60%;
         margin: auto;
+    }
+
+    ul.badges {
+        height: 400px;
+        overflow: auto;
     }
 
 }
@@ -430,8 +438,13 @@ nav a.selected, nav a:hover {
         width: 60%;
     }
 
+    ul.badges {
+        height: 410px;
+        overflow: auto;
+    }
+
     .badgesImg {
-        width: 28%;
+        width: 20%;
     }
 
 

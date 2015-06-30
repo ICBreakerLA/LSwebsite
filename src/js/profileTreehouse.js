@@ -7,6 +7,7 @@
 
 $(document).ready(function () {
     $.getJSON("http://teamtreehouse.com/lionelsellam.json", function (data) {
+
         var badgesTreehouse = '<ul class="badges">';
         $.each(data.badges, function(index, el){
             badgesTreehouse += '<li class="badgesImg">';
@@ -21,5 +22,13 @@ $(document).ready(function () {
         });
         badgesTreehouse += '</ul>';
         $('.badgesTreehouse').html(badgesTreehouse);
+
+        $(".badges").mCustomScrollbar({
+            theme: "dark"
+        });
+
     });
+
+
+
 });
