@@ -7,9 +7,14 @@
 
 $(document).ready(function () {
     $.getJSON("http://teamtreehouse.com/lionelsellam.json", function (data) {
+        var array = $.map(data.badges, function(value, index) {
+            return [value];
+        });
+
+        data = (array.reverse());
 
         var badgesTreehouse = '<ul class="badges">';
-        $.each(data.badges, function(index, el){
+        $.each(data, function(index, el){
             badgesTreehouse += '<li class="badgesImg">';
             badgesTreehouse += '<img src="'+ el.icon_url +'" alt="" />';
             badgesTreehouse += '<span class="badgesName">';
@@ -28,7 +33,6 @@ $(document).ready(function () {
         });
 
     });
-
 
 
 });
