@@ -216,9 +216,10 @@ ul {
 }
 
 .badgesImg {
-    float: left;
+    display: inline-block;
     margin: 2.5%;
     width: 40%;
+    vertical-align: top;
 }
 
 .badgesImg img {
@@ -230,7 +231,6 @@ ul {
 .badgesDate {
     display: none;
 }
-
 .badgesName {
     display: block;
     margin: auto;
@@ -363,12 +363,6 @@ nav a.selected, nav a:hover {
         display: inline-block;
     }
 
-    .badgesImg {
-        float: left;
-        margin: 2.5%;
-        width: 40%;
-    }
-
     .badgesImg img {
         display: block;
         width: 40%;
@@ -437,8 +431,6 @@ nav a.selected, nav a:hover {
     }
 
     .badgesImg {
-        float: left;
-        margin: 0;
         width: 32%;
     }
 
