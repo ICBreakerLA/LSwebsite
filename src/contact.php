@@ -100,15 +100,15 @@ else $reponse='* Required fields';
                 <form class="form" id="form1" method="post" action="contact.php">
 
                     <p class="name">
-                        <input class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" type="text" id="field-nom" name="field-nom" value="<?php if(isset($_POST['field-nom'])) echo $_POST['field-nom'];?>" tabindex="25" />
+                        <input class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name*" type="text" id="field-nom" name="field-nom" value="<?php if(isset($_POST['field-nom'])) echo $_POST['field-nom'];?>" tabindex="25" />
                     </p>
 
                     <p class="email">
-                        <input placeholder="Email" type="text" class="validate[required,custom[email]] feedback-input" id="field-mail" name="field-mail" value="<?php if(isset($_POST['field-mail'])) echo $_POST['field-mail'];?>" tabindex="26" />
+                        <input placeholder="Email*" type="text" class="validate[required,custom[email]] feedback-input" id="field-mail" name="field-mail" value="<?php if(isset($_POST['field-mail'])) echo $_POST['field-mail'];?>" tabindex="26" />
                     </p>
 
                     <p class="text">
-                        <textarea class="validate[required,length[6,300]] feedback-input" placeholder="Comment" id="field-mess" name="field-mess" tabindex="28"><?php if(isset($_POST['field-mess'])) echo $_POST['field-mess'];?></textarea>
+                        <textarea class="validate[required,length[6,300]] feedback-input" placeholder="Comment*" id="field-mess" name="field-mess" tabindex="28"><?php if(isset($_POST['field-mess'])) echo $_POST['field-mess'];?></textarea>
                     </p>
 
 

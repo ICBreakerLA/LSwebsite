@@ -321,7 +321,7 @@ PAGE: CONTACT
         border-radius: 0;
         line-height: 22px;
         background-color: #fbfbfb;
-        padding: 13px 13px 13px 54px;
+        padding: 13px 13px 13px 13px;
         margin-bottom: 10px;
         width: 100%;
         -webkit-box-sizing: border-box;
@@ -337,7 +337,7 @@ PAGE: CONTACT
         border: 3px solid #3498db;
         color: #3498db;
         outline: none;
-        padding: 13px 13px 13px 54px;
+        padding: 13px 13px 13px 13px;
     }
 
     .focused {
