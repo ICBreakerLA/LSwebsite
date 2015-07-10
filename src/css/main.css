@@ -278,6 +278,12 @@ PAGE: CONTACT
     background-image: url('../img/twitter.png')
 }
 
+.required {
+    text-align: center;
+    font-size: 1em;
+    color: #0493bd;
+}
+
     /*********************
     FROM
     **********************/

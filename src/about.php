@@ -16,15 +16,15 @@
 </head>
 <body>
 <header>
-    <a href="index.html" id="logo">
+    <a href="index.php" id="logo">
         <h1>Lionel Sellam</h1>
         <h2>Front End Developer</h2>
     </a>
     <nav>
         <ul>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html"class="selected">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Portfolio</a></li>
+            <li><a href="about.php"class="selected">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
 </header>
