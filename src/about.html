@@ -57,5 +57,8 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/profileTreehouse.js"></script>
 <script src="js/animateBadges.js"></script>
+<script src="//code.highcharts.com/highcharts.js"></script>
+<script src="//code.highcharts.com/modules/exporting.js"></script>
+<div id="container" style="min-width: 310px; height: 500px; max-width: 600px; margin: 0 auto"></div>
 </body>
 </html>
