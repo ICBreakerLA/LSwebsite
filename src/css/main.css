@@ -525,14 +525,12 @@ nav a.selected, nav a:hover {
 404 PAGE
 ***********************/
 
-.page-404
-* {
+.page-404 * {
     line-height: 1.2;
     margin: 0;
 }
 
-.page-404
-html {
+.page-404 {
     color: #888;
     display: table;
     font-family: sans-serif;
@@ -541,24 +539,23 @@ html {
     width: 100%;
 }
 
-.page-404
-body {
+.page-404 body {
     display: table-cell;
     vertical-align: middle;
     margin: 2em auto;
+    overflow: hidden;
 }
 
-.page-404
-h1 {
+.page-404 h1 {
     color: #555;
     font-size: 2em;
     font-weight: 400;
 }
 
-.page-404
-p {
+.page-404 p {
     margin: 0 auto;
-    width: 280px;
+    width:80%;
+    max-width:500px;
 }
 
 .zerglick {
@@ -594,7 +591,7 @@ p {
         width: 450px;
         height: 750px;
         background-size: 90%;
-        margin-top: 0;
+        margin-left:-170px;
     }
 
     .content {
