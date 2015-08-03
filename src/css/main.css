@@ -286,7 +286,7 @@ PAGE: CONTACT
     #form-main {
         width: 100%;
         float: left;
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     #form-div {
@@ -317,12 +317,11 @@ PAGE: CONTACT
     }
 
     .feedback-input:focus {
-        background: #fff;
+        background-color: #fff;
         box-shadow: 0;
         border: 3px solid #3498db;
         color: #3498db;
         outline: none;
-        padding: 13px 13px 13px 13px;
     }
 
     .focused {
@@ -331,27 +330,27 @@ PAGE: CONTACT
     }
 
     /* Icons ---------------------------------- */
-    #name {
+    .name input {
         background: #fbfbfb url('../img/name.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
     }
     
-    #name:focus {
+    .name:focus {
         background: #fbfbfb url('../img/name.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
     }
     
-    #email {
+    .email input {
         background: #fbfbfb url('../img/email.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
     }
     
-    #email:focus {
+    .email:focus {
         background: #fbfbfb url('../img/email.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
     }
     
-    #comment {
+    .text textarea {
         background: #fbfbfb url('../img/comment.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
     }
