@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="index.php">Portfolio</a></li>
-            <li><a href="about.php"class="selected">About</a></li>
+            <li><a href="about.php" class="selected">About</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
@@ -34,8 +34,9 @@
             <img src="img/lionel.jpg" alt="Epic Kitesurf photo" class="profile-photo">
             <div class="wrapAbout">
                 <h3>About</h3>
-                <p> Hello everyone and welcome! This website is here showcase what I'm capable of web wise, but also to let you know I'm available for your projects you might have<br>
-                    Not only do I love Web, I'm also a passionate Kitesurfer, Mountain Biker,and Drummer. But overall a hardcore PC gamer.<br><br>
+                <p> Hello everyone and welcome! <br><br>
+                    This website is here to showcase my work and capabilities, but also to let you know I'm available for the projects you might have<br><br>
+                    Beside web development, I'm also a passionate kitesurfer, mountain biker, drummer and PC gamer.<br><br>
                     If you'd like to follow me on twitter, my username is <a href="http://twitter.com/icbreaker">@ICBreaker</a>
                 </p>
             </div>
@@ -46,6 +47,12 @@
             <div class="badgesTreehouse">
 
             </div>
+    </section>
+    <section>
+        <h3 class="donut">Still not convinced? Here is a graph about it:</h3>
+        <div id="highcharts" style="width: 600px; height: 400px; margin: 0 auto">
+
+        </div>
     </section>
     <footer>
         <a href="http://twitter.com/icbreaker"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
@@ -60,6 +67,6 @@
 <script src="js/animateBadges.js"></script>
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//code.highcharts.com/modules/exporting.js"></script>
-<div id="container" style="min-width: 310px; height: 500px; max-width: 600px; margin: 0 auto"></div>
+<script src="js/highcharts.js"></script>
 </body>
 </html>

@@ -33,7 +33,7 @@ $(function () {
             }
         });
         console.log(tab);
-        $('#container').highcharts({
+        $('#highcharts').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: 0,
@@ -46,7 +46,7 @@ $(function () {
                 y: 40
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.y}</b>'
+                pointFormat: '{series.name}: <b>{point.y}</b><br>Overall: <b>{point.percentage}</b>'
             },
             plotOptions: {
                 pie: {
@@ -67,7 +67,10 @@ $(function () {
                 name: 'Points',
                 innerSize: '50%',
                 data: tab
-            }]
+            }],
+            credits: {
+                enabled: false
+            }
         });
     });
 });
