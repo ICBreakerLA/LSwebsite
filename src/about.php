@@ -35,7 +35,7 @@
             <div class="wrapAbout">
                 <h3>About</h3>
                 <p> Hello everyone and welcome! <br><br>
-                    This website is here to showcase my work and capabilities, but also to let you know I'm available for the projects you might have<br><br>
+                    This website is here to showcase my work and capabilities, but also to let you know I'm available for the projects you might have.<br><br>
                     Beside web development, I'm also a passionate kitesurfer, mountain biker, drummer and PC gamer.<br><br>
                     If you'd like to follow me on twitter, my username is <a href="http://twitter.com/icbreaker">@ICBreaker</a>
                 </p>
@@ -43,14 +43,14 @@
         </div>
     </section>
     <section>
-        <h3 class="latestBadges">Here are my latest badges on Treehouse:</h3>
+        <h3 class="latestBadges">Click here to check my latest badges on Treehouse:</h3>
             <div class="badgesTreehouse">
 
             </div>
     </section>
     <section>
         <h3 class="donut">Still not convinced? Here is a graph about it:</h3>
-        <div id="highcharts" style="width: 600px; height: 400px; margin: 0 auto">
+        <div id="highcharts">
 
         </div>
     </section>

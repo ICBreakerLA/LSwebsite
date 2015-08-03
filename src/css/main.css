@@ -233,6 +233,12 @@ ul.badges {
     font-size: 0.75em;
 }
 
+#highcharts {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
 /*********************
 PAGE: CONTACT
 **********************/
