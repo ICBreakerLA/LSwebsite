@@ -16,26 +16,27 @@
 </head>
 <body>
 <header>
-    <a href="index.php" id="logo">
+    <a href="index.html" id="logo">
         <h1>Lionel Sellam</h1>
         <h2>Front End Developer</h2>
     </a>
     <nav>
         <ul>
-            <li><a href="index.php">Portfolio</a></li>
-            <li><a href="about.php"class="selected">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html"class="selected">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 <div id="wrapper">
     <section>
         <div class="about">
-            <img src="img/lionel.jpg" alt="Photograph of some random dude" class="profile-photo">
+            <img src="img/lionel.jpg" alt="Epic Kitesurf photo" class="profile-photo">
             <div class="wrapAbout">
                 <h3>About</h3>
-                <p> Sup guys, this is my first website for testing stuff, playing video games, and doing shit <br><br>
-                    If you'd like to follow me on twitter, my userame is <a href="http://twitter.com/icbreaker">@ICBreaker</a>
+                <p> Hello everyone and welcome! This website is here showcase what I'm capable of web wise, but also to let you know I'm available for your projects you might have<br>
+                    Not only do I love Web, I'm also a passionate Kitesurfer, Mountain Biker,and Drummer. But overall a hardcore PC gamer.<br><br>
+                    If you'd like to follow me on twitter, my username is <a href="http://twitter.com/icbreaker">@ICBreaker</a>
                 </p>
             </div>
         </div>
@@ -57,5 +58,8 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/profileTreehouse.js"></script>
 <script src="js/animateBadges.js"></script>
+<script src="//code.highcharts.com/highcharts.js"></script>
+<script src="//code.highcharts.com/modules/exporting.js"></script>
+<div id="container" style="min-width: 310px; height: 500px; max-width: 600px; margin: 0 auto"></div>
 </body>
 </html>
