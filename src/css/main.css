@@ -286,9 +286,7 @@ FORM
 #form-div {
     background-color: rgba(72, 72, 72, 0.4);
     left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
+    width: 93%;
     padding: 3% 3% 3% 3%;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -328,27 +326,27 @@ FORM
 
 /* Icons ---------------------------------- */
 #name {
-    background: url('http://rexkirby.com/kirbyandson/images/name.svg') no-repeat 11px 8px;
+    background: #fbfbfb url('../img/name.svg') no-repeat 11px 8px;
     background-size: 30px 30px;
 }
 
 #name:focus {
-    background: url('http://rexkirby.com/kirbyandson/images/name.svg') no-repeat 11px 8px;
+    background: #fbfbfb url('../img/name.svg') no-repeat 11px 8px;
     background-size: 30px 30px;
 }
 
 #email {
-    background: url('http://rexkirby.com/kirbyandson/images/email.svg') no-repeat 11px 8px;
+    background: #fbfbfb url('../img/email.svg') no-repeat 11px 8px;
     background-size: 30px 30px;
 }
 
 #email:focus {
-    background: url('http://rexkirby.com/kirbyandson/images/email.svg') no-repeat 11px 8px;
+    background: #fbfbfb url('../img/email.svg') no-repeat 11px 8px;
     background-size: 30px 30px;
 }
 
 #comment {
-    background: url('http://rexkirby.com/kirbyandson/images/comment.svg') no-repeat 11px 8px;
+    background: #fbfbfb url('../img/comment.svg') no-repeat 11px 8px;
     background-size: 30px 30px;
 }
 
@@ -407,23 +405,7 @@ input:focus, textarea:focus {
     background-color: white;
 }
 
-/*********************
-PAGE: 404
-**********************/
 
-.zerglick {
-    position: fixed;
-    left: 0;
-    bottom: -5px;
-    width: 25%;
-}
-
-.zergpants {
-    position: fixed;
-    right: 0;
-    bottom: -14px;
-    width: 50%;
-}
 
 /*********************
 COLORS
@@ -466,60 +448,7 @@ nav a.selected, nav a:hover {
     color: #fff;
 }
 
-/***************************
- RESPONSIVE
- **************************/
 
-@media screen and (min-width: 480px) {
-
-    /*********************
-    TWO COLUMN LAYOUT
-    **********************/
-    #primary {
-        width: 50%;
-        float: left;
-    }
-
-    #secondary {
-        width: 40%;
-        float: right;
-    }
-
-    /*********************
-  PAGE: PORTFOLIO
-  **********************/
-    #gallery li {
-        width: 28.3333%
-    }
-
-    #gallery li:nth-child(4n) {
-        clear: left;
-    }
-
-    /*********************
-    PAGE: ABOUT
-    **********************/
-    .profile-photo {
-        float: left;
-        margin: 0 6% 80px 0;
-    }
-
-    .latestBadges {
-        display: inline-block;
-    }
-
-    .badgesImg img {
-        display: block;
-        width: 60%;
-        margin: auto;
-    }
-
-    ul.badges {
-        height: 400px;
-        overflow: auto;
-    }
-
-}
 
 /***********************
 404 PAGE
@@ -578,6 +507,63 @@ nav a.selected, nav a:hover {
     bottom: -14px;
 }
 
+
+
+/***************************
+ RESPONSIVE
+ **************************/
+
+@media screen and (min-width: 480px) {
+
+    /*********************
+    TWO COLUMN LAYOUT
+    **********************/
+    #primary {
+        width: 50%;
+        float: left;
+    }
+
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+
+    /*********************
+  PAGE: PORTFOLIO
+  **********************/
+    #gallery li {
+        width: 28.3333%
+    }
+
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+
+    /*********************
+    PAGE: ABOUT
+    **********************/
+    .profile-photo {
+        float: left;
+        margin: 0 6% 80px 0;
+    }
+
+    .latestBadges {
+        display: inline-block;
+    }
+
+    .badgesImg img {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+
+    ul.badges {
+        height: 400px;
+        overflow: auto;
+    }
+
+}
+
 @media screen and (min-width: 660px) {
 
     .page-404 body {
@@ -591,7 +577,7 @@ nav a.selected, nav a:hover {
         width: 450px;
         height: 750px;
         background-size: 90%;
-        margin-left:-170px;
+        margin-left: -170px;
     }
 
     .content {
@@ -616,84 +602,84 @@ nav a.selected, nav a:hover {
         height: 200px;
         bottom: -14px;
     }
-}
 
-/*********************
-HEADER
-**********************/
-nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
-}
+    /*********************
+    HEADER
+    **********************/
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        width: 45%;
+    }
 
-nav a, nav a:visited {
-    color: #054C7A;
-}
+    nav a, nav a:visited {
+        color: #054C7A;
+    }
 
-nav a.selected, nav a:hover {
-    color: #fff;
-}
+    nav a.selected, nav a:hover {
+        color: #fff;
+    }
 
-#logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-}
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
+    }
 
-h1 {
-    font-size: 2.5em;
-}
+    h1 {
+        font-size: 2.5em;
+    }
 
-h2 {
-    font-size: 0.825em;
-    margin-bottom: 20px;
-}
+    h2 {
+        font-size: 0.825em;
+        margin-bottom: 20px;
+    }
 
-header {
-    border-bottom: 5px solid #04385B;
-    margin-bottom: 60px;
-}
+    header {
+        border-bottom: 5px solid #04385B;
+        margin-bottom: 60px;
+    }
 
-/*********************
-PAGE: ABOUT
-**********************/
-.wrapAbout {
-    margin-bottom: 32%;
-}
+    /*********************
+    PAGE: ABOUT
+    **********************/
+    .wrapAbout {
+        margin-bottom: 32%;
+    }
 
-.about {
-    padding-bottom: 5px;
-}
+    .about {
+        padding-bottom: 5px;
+    }
 
-.profile-photo {
-    float: left;
-    margin: 0 6% 80px 0;
-    width: 60%;
-}
+    .profile-photo {
+        float: left;
+        margin: 0 6% 80px 0;
+        width: 60%;
+    }
 
-ul.badges {
-    height: 410px;
-    overflow: auto;
-}
+    ul.badges {
+        height: 410px;
+        overflow: auto;
+    }
 
-.badgesImg {
-    width: 20%;
-}
+    .badgesImg {
+        width: 20%;
+    }
 
-/************************
-PAGE: CONTACT
-************************/
-#form-div {
-    padding: 35px 35px 50px 35px;
-    width: 450px;
-    float: left;
-    left: 50%;
-    position: relative;
-    margin-top: 30px;
-    margin-left: -260px;
+    /************************
+    PAGE: CONTACT
+    ************************/
+    #form-div {
+        padding: 35px 35px 50px 35px;
+        width: 450px;
+        float: left;
+        left: 50%;
+        position: relative;
+        margin-top: 30px;
+        margin-left: -260px;
+    }
 }
