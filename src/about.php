@@ -51,9 +51,12 @@
     <section>
         <h3 class="donut">Still not convinced? Here is a graph about it:</h3>
         <div id="highcharts">
-
         </div>
+        <ul id="belette-list">
+
+        </ul>
     </section>
+
     <footer>
         <a href="http://twitter.com/icbreaker"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
         <a href="http://facebook.com/lionel.cestlame"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
@@ -63,10 +66,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/profileTreehouse.js"></script>
-<script src="js/animateBadges.js"></script>
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//code.highcharts.com/modules/exporting.js"></script>
-<script src="js/highcharts.js"></script>
+<script src="js/aboutscript.js"></script>
 </body>
 </html>

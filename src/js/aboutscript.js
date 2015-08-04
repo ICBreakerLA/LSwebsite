@@ -4,7 +4,31 @@
 
 $(function () {
     $.getJSON("http://teamtreehouse.com/lionelsellam.json", function(data) {
-        console.log(data.points);
+        var array = $.map(data.badges, function(value, index) {
+            return [value];
+        });
+
+        var dataTmp = (array.reverse());
+
+        var badgesTreehouse = '<ul class="badges">';
+        $.each(dataTmp, function(index, el){
+            badgesTreehouse += '<li class="badgesImg">';
+            badgesTreehouse += '<img src="'+ el.icon_url +'" alt="" />';
+            badgesTreehouse += '<span class="badgesName">';
+            badgesTreehouse += el.name;
+            badgesTreehouse += '</span>';
+            badgesTreehouse += '<span class="badgesDate">';
+            badgesTreehouse += el.earned_date;
+            badgesTreehouse += '</span>' ;
+            badgesTreehouse += '</li>' ;
+        });
+        badgesTreehouse += '</ul>';
+        $('.badgesTreehouse').html(badgesTreehouse);
+
+        $(".badges").mCustomScrollbar({
+            theme: "dark"
+        });
+
         var tab = [];
         $.each(data.points, function (index, value) {
             if(index != 'total' && value != 0){
@@ -24,6 +48,21 @@ $(function () {
                     case 'Development Tools':
                         subtab.color = '#637a91';
                         break;
+                    case 'Design':
+                    subtab.color = '#E0AB18';
+                    break;
+                    case 'Wordpress':
+                        subtab.color = '#838CC7';
+                        break;
+                    case 'PHP':
+                        subtab.color = '#7D669E';
+                        break;
+                    case 'Game Development':
+                        subtab.color = '#20898c';
+                        break;
+                    case 'Digital Literacy':
+                        subtab.color = '#c38cd4';
+                        break;
                     default:
                         subtab.color = 'red';
                         break;
@@ -32,7 +71,25 @@ $(function () {
                 tab.push(subtab);
             }
         });
-        console.log(tab);
+
+        var coolstuff = "";
+        $.each(tab, function (index, value){
+            coolstuff += '<li class="';
+            coolstuff += value.name;
+            coolstuff += '">';
+            coolstuff += '<span style="color:';
+            coolstuff += value.color;
+            coolstuff += '">&bull;</span>';
+            coolstuff += '<span class="title">';
+            coolstuff += value.y;
+            coolstuff += '</span>';
+            coolstuff += '<span class="desc">';
+            coolstuff += value.name;
+            coolstuff += '</span>';
+            coolstuff += '</li>';
+        });
+        $("#belette-list").html(coolstuff);
+
         $('#highcharts').highcharts({
             chart: {
                 plotBackgroundColor: null,
