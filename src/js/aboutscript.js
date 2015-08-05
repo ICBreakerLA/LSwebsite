@@ -77,9 +77,9 @@ $(function () {
             coolstuff += '<li class="';
             coolstuff += value.name;
             coolstuff += ' mobile-grid">';
-            coolstuff += '<span style="color:';
+            coolstuff += '<span class="bullet" style="background-color:';
             coolstuff += value.color;
-            coolstuff += '">&bull;</span>';
+            coolstuff += '"></span>';
             coolstuff += '<span class="title">';
             coolstuff += value.y;
             coolstuff += '</span>';
@@ -127,6 +127,11 @@ $(function () {
             }],
             credits: {
                 enabled: false
+            },
+            navigation: {
+                buttonOptions: {
+                    enabled: false
+                }
             }
         });
     });
