@@ -239,6 +239,17 @@ ul.badges {
     margin: 0 auto;
 }
 
+.donut {
+    padding-top: 15px;
+}
+
+.mobile-grid {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /*********************
 PAGE: CONTACT
 **********************/

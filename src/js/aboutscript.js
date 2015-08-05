@@ -76,7 +76,7 @@ $(function () {
         $.each(tab, function (index, value){
             coolstuff += '<li class="';
             coolstuff += value.name;
-            coolstuff += '">';
+            coolstuff += ' mobile-grid">';
             coolstuff += '<span style="color:';
             coolstuff += value.color;
             coolstuff += '">&bull;</span>';
