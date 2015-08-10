@@ -24,7 +24,6 @@ h3 {
     margin: 0 0 1em 0;
 }
 
-
 /*********************
 HEADING
 **********************/
@@ -49,13 +48,11 @@ h1 {
     line-height: 0.8em;
 }
 
-h2{
+h2 {
     font-size: 0.75em;
     margin: -5px 0 0;
     font-weight: normal;
 }
-
-
 
 /*********************
 NAVIGATION
@@ -81,7 +78,6 @@ nav a {
     padding: 15px 10px;
 }
 
-
 /*********************
 FOOTER
 **********************/
@@ -99,10 +95,6 @@ footer {
     margin: 0 5px;
 }
 
-
-
-
-
 /*********************
 PAGE: PORTFOLIO
 **********************/
@@ -114,7 +106,7 @@ PAGE: PORTFOLIO
 
 }
 
-#wrapper h1{
+#wrapper h1 {
     font-size: 1.75em;
     font-weight: normal;
     line-height: 0.975em;
@@ -123,7 +115,7 @@ PAGE: PORTFOLIO
     color: #000;
 }
 
-#wrapper h2{
+#wrapper h2 {
     font-size: 1.45em;
     border-top: 1px solid #ddd;
     padding-top: 0.5em;
@@ -136,10 +128,9 @@ PAGE: PORTFOLIO
 #wrapper article img {
     width: 7.75em;
     height: 7.75em;
-    border-color: #eee;
-    border: 0.625em solid rgba( 255, 255, 255, .5 );
-    -webkit-box-shadow: 0 0 0.313em rgba( 0, 0, 0, .05 );
-    box-shadow: 0 0 0.313em rgba( 0, 0, 0, .05 );
+    border: 0.625em solid #eee;
+    -webkit-box-shadow: 0 0 0.313em rgba(0, 0, 0, .05);
+    box-shadow: 0 0 0.313em rgba(0, 0, 0, .05);
     -webkit-transition: -webkit-box-shadow .3s ease, border-color .3s ease;
     transition: box-shadow .3s ease, border-color .3s ease;
 }
@@ -164,32 +155,32 @@ PAGE: PORTFOLIO
     font-size: 0.75em;
     color: #bdc3c7;
 }
-    /*********************
-    Lightbox
-    **********************/
 
-    #imagelightbox {
-        cursor: pointer;
-        position: fixed;
-        z-index: 10000;
-        -ms-touch-action: none;
-        touch-action: none;
-        -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
-        box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
-    }
+/*********************
+Lightbox
+**********************/
 
-    #imagelightbox-caption{
-        text-align: center;
-        color: #fff;
-        background-color: #666;
-        position: fixed;
-        z-index: 10001;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0.625em;
-    }
+#imagelightbox {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    -ms-touch-action: none;
+    touch-action: none;
+    -webkit-box-shadow: 0 0 3.125em rgba(0, 0, 0, .75);
+    box-shadow: 0 0 3.125em rgba(0, 0, 0, .75);
+}
 
+#imagelightbox-caption {
+    text-align: center;
+    color: #fff;
+    background-color: #666;
+    position: fixed;
+    z-index: 10001;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.625em;
+}
 
 /*********************
 PAGE: ABOUT
@@ -233,6 +224,7 @@ ul.badges {
 .badgesDate {
     display: none;
 }
+
 .badgesName {
     display: block;
     margin: auto;
@@ -241,12 +233,62 @@ ul.badges {
     font-size: 0.75em;
 }
 
+.mobile-grid {
+    box-sizing: border-box;
+    list-style: none;
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bullet {
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 6px 0 0 -25px;
+    border-radius: 15px;
+}
+
+span.title {
+    font-size: larger;
+    font-weight: 800;
+    color: #384047;
+    margin-bottom: 5px
+}
+
+span.desc {
+    font-size: 14px;
+    color: #a9b3bb;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+/***Higcharts styling**/
+#highcharts {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.donut {
+    padding-top: 15px;
+}
+
+tspan {
+    display: none;
+}
+
 
 /*********************
 PAGE: CONTACT
 **********************/
 
-.general_info{
+.general_info {
     text-align: center;
 }
 
@@ -295,23 +337,17 @@ PAGE: CONTACT
     #form-main {
         width: 100%;
         float: left;
-        padding-top: 0px;
+        padding-top: 0;
     }
 
-    #form-div{
+    #form-div {
         background-color: rgba(72, 72, 72, 0.4);
         left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
-        padding-top: 3%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-bottom: 3%;
+        width: 93%;
+        padding: 3% 3% 3% 3%;
         -moz-border-radius: 7px;
         -webkit-border-radius: 7px;
-    }
-
+}
 
     .feedback-input {
         color: #3c3c3c;
@@ -321,7 +357,7 @@ PAGE: CONTACT
         border-radius: 0;
         line-height: 22px;
         background-color: #fbfbfb;
-        padding: 13px 13px 13px 13px;
+        padding: 13px 13px 13px 54px;
         margin-bottom: 10px;
         width: 100%;
         -webkit-box-sizing: border-box;
@@ -332,12 +368,11 @@ PAGE: CONTACT
     }
 
     .feedback-input:focus {
-        background: #fff;
+        background-color: #fff;
         box-shadow: 0;
         border: 3px solid #3498db;
         color: #3498db;
         outline: none;
-        padding: 13px 13px 13px 13px;
     }
 
     .focused {
@@ -346,54 +381,43 @@ PAGE: CONTACT
     }
 
     /* Icons ---------------------------------- */
-    #name {
-        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    .name input {
+        background: #fbfbfb url('../img/name.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
-        background-position: 11px 8px;
-        background-repeat: no-repeat;
     }
-
-    #name:focus {
-        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    
+    .name:focus {
+        background: #fbfbfb url('../img/name.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
-        background-position: 8px 5px;
-        background-position: 11px 8px;
-        background-repeat: no-repeat;
     }
-
-    #email {
-        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    
+    .email input {
+        background: #fbfbfb url('../img/email.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
-        background-position: 11px 8px;
-        background-repeat: no-repeat;
     }
-
-    #email:focus {
-        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    
+    .email:focus {
+        background: #fbfbfb url('../img/email.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
-        background-position: 11px 8px;
-        background-repeat: no-repeat;
     }
-
-    #comment {
-        background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    
+    .text textarea {
+        background: #fbfbfb url('../img/comment.svg') no-repeat 11px 8px;
         background-size: 30px 30px;
-        background-position: 11px 8px;
-        background-repeat: no-repeat;
     }
-
+    
     textarea {
         width: 100%;
         height: 150px;
         line-height: 150%;
         resize: vertical;
     }
-
+    
     input:hover, textarea:hover,
     input:focus, textarea:focus {
         background-color: white;
     }
-
+    
     #button-blue {
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         float: left;
@@ -411,18 +435,18 @@ PAGE: CONTACT
         margin-top: -4px;
         font-weight: 700;
     }
-
+    
     #button-blue:hover {
         background-color: rgba(0, 0, 0, 0);
         color: #0493bd;
     }
-
+    
     .submit:hover {
         color: #3498db;
     }
-
+    
     .ease {
-        width: 0px;
+        width: 0;
         height: 74px;
         background-color: #fbfbfb;
         -webkit-transition: .3s ease;
@@ -431,12 +455,12 @@ PAGE: CONTACT
         -ms-transition: .3s ease;
         transition: .3s ease;
     }
-
+    
     .submit:hover .ease {
         width: 100%;
         background-color: white;
     }
-
+    
 
 /*********************
 COLORS
@@ -455,7 +479,7 @@ header {
 }
 
 /* Nav background on mobile  */
-nav{
+nav {
     background: #054C7A;
 }
 
@@ -465,7 +489,7 @@ h1, h2 {
 }
 
 /* links */
-a{
+a {
     color: #054C7A;
 }
 
@@ -478,6 +502,66 @@ nav a, nav a:visited {
 nav a.selected, nav a:hover {
     color: #fff;
 }
+
+
+
+/***********************
+404 PAGE
+***********************/
+
+.page-404 * {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.page-404 {
+    color: #888;
+    display: table;
+    font-family: sans-serif;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.page-404 body {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+    overflow: hidden;
+}
+
+.page-404 h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.page-404 p {
+    margin: 0 auto;
+    width:80%;
+    max-width:500px;
+}
+
+.zerglick {
+    background: url('../img/gif_zergling_lick.gif') no-repeat;
+    background-size: 100%;
+    position: fixed;
+    left: 0;
+    bottom: -14px;
+    width: 75px;
+    height: 100px;
+}
+
+.zergpants {
+    background: url('../img/gif_ling_pants.gif') no-repeat;
+    position: fixed;
+    background-size: 100%;
+    right: 0;
+    width: 150px;
+    height: 100px;
+    bottom: -14px;
+}
+
 
 
 /***************************
@@ -497,14 +581,12 @@ nav a.selected, nav a:hover {
 
     #secondary {
         width: 40%;
-        float:right;
+        float: right;
     }
 
-
-
     /*********************
-  PAGE: PORTFOLIO
-  **********************/
+    PAGE: PORTFOLIO
+    **********************/
 
     #gallery li {
         width: 28.3333%
@@ -513,8 +595,6 @@ nav a.selected, nav a:hover {
     #gallery li:nth-child(4n) {
         clear: left;
     }
-
-
 
     /*********************
     PAGE: ABOUT
@@ -540,9 +620,55 @@ nav a.selected, nav a:hover {
         overflow: auto;
     }
 
+    /*This is only for the highcharts legend*/
+    tspan {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 660px) {
+
+    /***********************
+    404 Page
+    ***********************/
+    
+    .page-404 body {
+        padding-bottom: 50px;
+        vertical-align: bottom;
+    }
+
+    .overlord {
+        position: absolute;
+        background: url('../img/overlord.png') no-repeat;
+        width: 450px;
+        height: 750px;
+        background-size: 90%;
+        margin-left: -170px;
+    }
+
+    .content {
+        position: relative;
+        z-index: 4;
+    }
+
+    .zerglick {
+        background: url('../img/gif_zergling_lick.gif') no-repeat;
+        position: fixed;
+        left: 0;
+        bottom: -5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .zergpants {
+        background: url('../img/gif_ling_pants.gif');
+        position: fixed;
+        right: 0;
+        width: 300px;
+        height: 200px;
+        bottom: -14px;
+    }
 
     /*********************
     HEADER
@@ -556,12 +682,14 @@ nav a.selected, nav a:hover {
         text-align: right;
         width: 45%;
     }
+
     nav a, nav a:visited {
         color: #054C7A;
     }
 
     nav a.selected, nav a:hover {
-        color: #fff;}
+        color: #fff;
+    }
 
     #logo {
         float: left;
@@ -588,7 +716,7 @@ nav a.selected, nav a:hover {
     PAGE: ABOUT
     **********************/
     .wrapAbout {
-        margin-bottom: 32%;
+        margin-bottom: 20%;
     }
 
     .about {
@@ -610,15 +738,25 @@ nav a.selected, nav a:hover {
         width: 20%;
     }
 
+    .mobile-grid {
+        width: 25%;
+    }
+
+    span.desc {
+        white-space: normal;
+    }
+
+    /*This is only for the highcharts legend*/
+    tspan {
+        display: block;
+    }
+
     /************************
     PAGE: CONTACT
     ************************/
 
     #form-div {
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-top: 35px;
-        padding-bottom: 50px;
+        padding: 35px 35px 50px 35px;
         width: 450px;
         float: left;
         left: 50%;
