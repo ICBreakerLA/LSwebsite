@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='//fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="js/animsition/animsition.min.css">
+    <link rel="stylesheet" href="js/mCustomScrollbar/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
@@ -15,6 +16,7 @@
     <![endif]-->
 </head>
 <body>
+<div class="animsition">
 <header>
     <a href="index.php" id="logo">
         <h1>Lionel Sellam</h1>
@@ -22,9 +24,9 @@
     </a>
     <nav>
         <ul>
-            <li><a href="index.php">Portfolio</a></li>
-            <li><a href="about.php" class="selected">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="index.php" class="animsition-link">Portfolio</a></li>
+            <li><a href="about.php" class="selected animsition-link">About</a></li>
+            <li><a href="contact.php" class="animsition-link">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -65,9 +67,12 @@
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/animsition/jquery.animsition.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//code.highcharts.com/modules/exporting.js"></script>
 <script src="js/aboutscript.js"></script>
+</div>
 </body>
 </html>

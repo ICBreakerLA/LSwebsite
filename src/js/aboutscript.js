@@ -51,7 +51,7 @@ $(function () {
                     case 'Design':
                     subtab.color = '#E0AB18';
                     break;
-                    case 'Wordpress':
+                    case 'WordPress':
                         subtab.color = '#838CC7';
                         break;
                     case 'PHP':
@@ -63,10 +63,7 @@ $(function () {
                     case 'Digital Literacy':
                         subtab.color = '#c38cd4';
                         break;
-                    default:
-                        subtab.color = 'red';
-                        break;
-                }
+                    }
 
                 tab.push(subtab);
             }
