@@ -83,7 +83,7 @@ else $reponse='* Required fields';
 <div id="wrapper">
     <section class="general_info">
         <h3>General Information</h3>
-        <p>I am available for ripping shit up. If you have any questions, please don't hesitate to contact me!</p>
+        <p>I am available for any projects you may have. If you have any questions, please don't hesitate to contact me!</p>
         <p>Please only use twitter and email to reach me.</p>
     </section>
     <!-- <section id="secondary">

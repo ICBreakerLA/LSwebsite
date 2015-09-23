@@ -63,9 +63,6 @@ $(function () {
                     case 'Digital Literacy':
                         subtab.color = '#c38cd4';
                         break;
-                    default:
-                        subtab.color = 'red';
-                        break;
                 }
 
                 tab.push(subtab);
