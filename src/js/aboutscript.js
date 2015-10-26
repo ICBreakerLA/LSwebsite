@@ -3,7 +3,7 @@
  */
 
 $(function () {
-    $.getJSON("http://teamtreehouse.com/lionelsellam.json", function(data) {
+    $.getJSON("https://teamtreehouse.com/lionelsellam.json", function(data) {
         var array = $.map(data.badges, function(value, index) {
             return [value];
         });
