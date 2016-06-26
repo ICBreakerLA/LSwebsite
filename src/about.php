@@ -62,7 +62,7 @@
     <footer>
         <a href="http://twitter.com/icbreaker"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
         <a href="http://facebook.com/lionel.cestlame"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-        <p>&copy; 2015 Lionel Sellam.</p>
+        <p>&copy; 2016 Lionel Sellam.</p>
     </footer>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
